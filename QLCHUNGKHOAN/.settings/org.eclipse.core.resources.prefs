@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+encoding//src/Entity/NHANVIEN.java=UTF-8
+encoding//src/QLCHUNGKHOAN/FormADMIN.java=UTF-8
+encoding//src/QLCHUNGKHOAN/FormCoPhieu.java=UTF-8
+encoding//src/QLCHUNGKHOAN/FormNganHang.java=UTF-8
+encoding//src/QLCHUNGKHOAN/FormQuyDinh.java=UTF-8
+encoding//src/QLCHUNGKHOAN/FormSanGiaoDich.java=UTF-8
+encoding//src/QLCHUNGKHOAN/FromDangNhap.java=UTF-8
+encoding//src/QLCHUNGKHOAN/Recovery.java=UTF-8
+encoding//src/QLCHUNGKHOAN/formLENHDAT.java=UTF-8
+encoding//src/QLCHUNGKHOAN/formNDT.java=UTF-8
+encoding//src/Service/NHADAUTUService.java=UTF-8
+encoding//src/Service/NHANVIENService.java=UTF-8
