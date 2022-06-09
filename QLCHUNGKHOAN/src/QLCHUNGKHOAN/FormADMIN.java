@@ -221,7 +221,6 @@ public class FormADMIN extends JFrame {
 		
 		table.setModel(new DefaultTableModel(
 			new Object[][] {
-				{null, null, null, null, null, null, null, null},
 			},
 			new String[] {
 				"M\u00E3 Nh\u00E2n Vi\u00EAn", "H\u1ECD", "T\u00EAn", "Ph\u00E1i", "\u0110\u1ECBa Ch\u1EC9", "S\u1ED1 \u0110i\u1EC7n Tho\u1EA1i", "L\u01B0\u01A1ng", "Ng\u00E0y Sinh"
@@ -362,10 +361,14 @@ public class FormADMIN extends JFrame {
 						temp.setNGAYSINH(sdf.format(dateChooser.getDate()));
 						System.out.print(textFieldHO.getText());
 						if (nvService.update(temp,nv)) {
+							JOptionPane.showMessageDialog(panel, "Sửa Thành Công");
 							String data[]= {String.valueOf(temp.getMANV()),temp.getHO(),temp.getTEN(),temp.getPHAI(),temp.getDIACHI(),temp.getSDT(),String.valueOf(temp.getLuong()),temp.getNGAYSINH()};
+							System.out.print(data.length);
 							for(int i=0;i<model.getRowCount();i++) {
-								if(model.getValueAt(i, 0).equals(temp.getMANV())) {
+								System.out.print(i);
+								if(model.getValueAt(i, 0).equals(String.valueOf(temp.getMANV()))) {
 									for(int j=0;j<data.length;j++) {
+										System.out.print(data[j]);
 										model.setValueAt(data[j], i, j);
 									}
 								}
